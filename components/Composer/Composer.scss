@@ -1,0 +1,90 @@
+@import '../../../../css/colors';
+
+.composer {
+  display: grid;
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 50px;
+
+  .border-composer {
+    min-width: 25px;
+  }
+
+  .container {
+    background-color: white;
+    border: solid 1px $color-grey-darken;
+    height: 100%;
+  }
+}
+
+#webComposer {
+  grid-template-columns: 1fr 1024px 1fr;
+  min-height: calc(100vh - 360px);
+
+  .container {
+    width: 1024px;
+  }
+}
+
+#mailComposer {
+  grid-template-columns: 1fr 600px 1fr;
+  min-height: calc(100vh - 360px);
+
+  .container {
+    width: 600px;
+  }
+}
+
+#documentComposer {
+  &.vertical {
+    grid-template-columns: 1fr 210mm 1fr;
+    height: 297mm;
+
+    .container {
+      width: 210mm;
+    }
+  }
+
+  &.horizontal {
+    grid-template-columns: 1fr 210mm 1fr;
+    height: 210mm;
+
+    .container {
+      width: 297mm;
+    }
+  }
+}
+
+.add-row-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .dotted-line {
+    border-top: dashed 2px $color-grey;
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    justify-self: stretch;
+  }
+
+  .add-row-btn {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 70%;
+    margin-bottom: 15px;
+
+    p {
+      color: $color-grey-darken;
+      width: 150px;
+      font-family: Raleway, serif;
+    }
+
+    &:hover {
+      opacity: 100%;
+      cursor: pointer;
+    }
+  }
+}

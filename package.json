@@ -1,0 +1,71 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.7.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.0.0",
+    "@symfony/webpack-encore": "^0.28.0",
+    "@types/jest": "^24.0.19",
+    "babel-jest": "^24.9.0",
+    "core-js": "^3.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0",
+    "node-sass": "^4.12.0",
+    "puppeteer": "^2.0.0",
+    "react-test-renderer": "^16.10.2",
+    "regenerator-runtime": "^0.13.2",
+    "sass-loader": "^7.0.1",
+    "webpack-notifier": "^1.6.0"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress",
+    "test": "jest"
+  },
+  "dependencies": {
+    "dotenv-flow": "^3.1.0",
+    "draft-js": "^0.11.3",
+    "font-picker-react": "^3.5.0",
+    "git": "^0.1.5",
+    "moment": "^2.24.0",
+    "react": "^16.10.2",
+    "react-beautiful-dnd": "^12.0.0",
+    "react-color": "^2.18.0",
+    "react-day-picker": "^7.4.0",
+    "react-dom": "^16.10.2",
+    "react-rater": "^5.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-select": "^3.0.8",
+    "react-tabs": "^3.0.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        },
+        "jest-puppeteer"
+      ],
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-nullish-coalescing-operator"
+    ]
+  }
+}

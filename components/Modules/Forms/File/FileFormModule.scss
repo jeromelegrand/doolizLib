@@ -1,0 +1,24 @@
+.input-form-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .file-input {
+    display: none;
+  }
+
+  .file-label {
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    p {
+      margin-left: 5px;
+      padding-top: 3px;
+    }
+  }
+}

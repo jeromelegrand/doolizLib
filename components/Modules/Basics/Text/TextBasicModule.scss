@@ -1,0 +1,15 @@
+@import '../../../../../../css/colors';
+@import '../../../../../../css/fonts';
+
+$transitionDuration: 0.3s;
+
+
+.text-module {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 2px;
+  border: solid 1px $color-grey-darken;
+  padding: 10px;
+  resize: none;
+  margin: 10px;
+}

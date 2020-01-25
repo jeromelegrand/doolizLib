@@ -1,0 +1,34 @@
+@import '../../../../../../../css/colors';
+
+.side-menu-col {
+  flex: 1;
+  width: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 2px;
+  padding: 10px;
+
+  .draggable-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: solid 1px $color-dark;
+    margin-left: 5px;
+    padding-left: 5px;
+
+    .svg-container {
+      width: 24px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.side-menu-col-dragging {
+  box-shadow: 0 0 2px 2px $color-grey;
+}

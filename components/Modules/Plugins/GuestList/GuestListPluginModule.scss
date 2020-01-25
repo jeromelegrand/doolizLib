@@ -1,0 +1,26 @@
+@import '../../../../../../css/colors';
+
+.guest-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+
+  .search-form {
+
+  }
+
+  .guest-list {
+    column-count: 3;
+    width: 100%;
+
+    .guest {
+      display: flex;
+      margin-bottom: 8px;
+
+      p {
+        margin-right: 5px;
+      }
+    }
+  }
+}

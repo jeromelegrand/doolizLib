@@ -1,0 +1,117 @@
+@import "../../../../../../../css/colors";
+
+$transitionDuration: 0.3s;
+
+.doc-params-list {
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-vertical;
+  height: calc(100vh - 370px);
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+
+    &:vertical {
+      width: 7px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  .doc-params-item {
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 2px;
+
+    .doc-params-dropdown {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 10px;
+      height: 44px;
+
+      .doc-params-title {
+        display: flex;
+        align-items: center;
+
+        .title-svg {
+          width: 24px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .title {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .doc-params-item-content {
+      border-top: solid 1px $color-grey;
+      padding: 20px 10px 10px;
+
+      .doc-params-section {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid  $color-grey;
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        .doc-params-section-title {
+          margin-bottom: 5px;
+        }
+
+        .doc-params-section-content {
+          display: flex;
+          justify-content: space-between;
+
+          .params-options-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-dark;
+            background-color: $color-grey;
+            transition: background-color $transitionDuration;
+            padding: 5px;
+            margin: 5px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 0.9em;
+            border-radius: 3px;
+
+            &:hover {
+              background-color: $color-grey-darken;
+              transition: background-color $transitionDuration;
+            }
+
+            &:first-child {
+              margin-left: 0;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+
+          .selected-params-option {
+            transition: background-color $transitionDuration;
+            font-weight: bold;
+            background-color: $color-grey-darken;
+
+            &:hover {
+              transition: background-color $transitionDuration;
+            }
+          }
+        }
+      }
+    }
+  }
+}

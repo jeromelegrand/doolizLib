@@ -1,0 +1,21 @@
+### JetBrains ###
+.idea/
+
+### macOS ###
+# General
+.DS_Store
+
+### react ###
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+
+*.sublime*
+
+psd
+thumb
+sketch
+

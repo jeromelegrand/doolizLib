@@ -1,0 +1,45 @@
+@import '../../../../../../css/colors';
+
+
+.carpooling-container {
+  display: flex;
+  align-items: flex-start;
+  overflow: scroll;
+  height: 720px;
+  width: 100%;
+
+  .carpooling-form {
+    width: calc(40% - 40px);
+    margin-right: 10px;
+
+    form {
+      width: auto;
+    }
+  }
+
+  .carpooling-ads {
+    height: 100%;
+    width: calc(60% - 40px);
+    margin-left: 10px;
+
+    .ad {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 10px;
+      background-color: $color-grey-lighten;
+
+      .title, .contact, .info {
+        margin-bottom: 10px;
+      }
+
+      .title {
+        display: flex;
+
+        p {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,62 @@
+@import '../../../../css/colors';
+@import '../../../../css/fonts';
+
+$transitionDuration: 0.3s;
+
+.module-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 400px;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  font-family: inherit;
+}
+
+.upload-module {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: dashed 2px $color-grey;
+
+  .upload-btn {
+    display: flex;
+    opacity: 80%;
+    transition: opacity $transitionDuration;
+
+    p {
+      margin-left: 5px;
+      padding-top: 3px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 100%;
+      transition: opacity $transitionDuration;
+    }
+  }
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#choiceInput {
+  font-family: Raleway, serif;
+}

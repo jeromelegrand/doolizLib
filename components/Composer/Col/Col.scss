@@ -1,0 +1,49 @@
+@import 'assets/js/reactApp/App';
+
+.composer-col-container {
+    width: 100%;
+    height: auto;
+
+    .composer-col {
+        flex: 1;
+        display: flex;
+        height: 100%;
+        background-color: white;
+        flex-direction: row;
+        border-radius: 2px;
+        position: relative;
+        border: solid 1px white;
+
+        &:hover, &.colSelected {
+            border: $selectionBorder;
+
+            .col-controls {
+                opacity: 1;
+                transition: opacity 0.2s;
+            }
+        }
+
+        .col-controls {
+            display: flex;
+            position: absolute;
+            right: 0;
+            left: unset;
+            top: unset;
+            border-bottom-left-radius: unset;
+            width: 60px;
+            background-color: $color-grey;
+            border: $selectionBorder;
+            padding: 5px;
+            border-bottom-right-radius: 5px;
+            opacity: 0;
+            z-index: 1;
+
+            .handle-drag, .delete-col {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 2px;
+            }
+        }
+    }
+}

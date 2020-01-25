@@ -1,0 +1,31 @@
+@import '../../../../../../css/colors';
+
+$react-rater-link: $color-grey !default;
+$react-rater-hover: #f9d71c !default;
+
+
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .react-rater-star {
+    color: $react-rater-link;
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  .react-rater-star.will-be-active {
+    color: $react-rater-hover;
+  }
+
+  .react-rater-star.is-active {
+    color: $react-rater-hover;
+  }
+
+  .react-rater-star.is-active-half:before {
+    color: $react-rater-hover;
+  }
+}

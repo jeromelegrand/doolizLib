@@ -1,0 +1,39 @@
+@import '../../../../../../../../../css/colors';
+
+#font-picker {
+  width: 100%;
+  box-shadow: none;
+
+  &.expanded {
+    .font-list {
+      max-height: 180px;
+    }
+  }
+
+  .dropdown-button {
+    background-color: white;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px $color-grey-darken;
+  }
+
+  .font-list {
+    background-color: white;
+
+    .font-list-item {
+      height: 30px;
+
+      .font-button {
+        &:hover {
+          background-color: $color-grey-lighten;
+        }
+      }
+
+      .active-font {
+        background-color: $color-grey;
+      }
+    }
+  }
+}
+

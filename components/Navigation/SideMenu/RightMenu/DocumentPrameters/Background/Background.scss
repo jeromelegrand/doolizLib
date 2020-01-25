@@ -1,0 +1,68 @@
+@import '../../../../../../../../css/colors';
+
+.chrome-picker {
+  width: 100% !important;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-shadow: none !important;
+}
+
+.colors-section {
+  flex-direction: column;
+
+  .global-colors {
+    display: flex;
+    flex-flow: wrap;
+
+    .color {
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+      margin-top: 10px;
+      border: solid 1px $color-grey-darken;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: unset;
+      }
+    }
+  }
+}
+
+.add-color {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: solid 1px $color-grey;
+  padding-bottom: 20px;
+
+  .add-color-btn {
+    display: flex;
+    cursor: pointer;
+
+    p {
+      color: $color-dark;
+      font-size: 0.8em;
+      margin-top: 2px;
+    }
+  }
+
+  .swatch {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border: solid 1px $color-grey-darken;
+    border-radius: 3px;
+  }
+}
+
+.custom-context {
+  border: solid 1px $color-grey-darken;
+  border-radius: 3px;
+  margin: 5px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  position: fixed;
+}

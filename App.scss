@@ -1,0 +1,114 @@
+@import 'assets/css/fonts';
+@import 'assets/css/colors';
+
+$transition: padding-left 0.5s, padding-right 0.5s;
+$selectionBorder: solid 1px $color-grey;
+
+body {
+  font-family: Raleway, 'serif';
+  color: $color-dark;
+}
+
+.web-container-margin {
+  height: 170px;
+}
+
+.web-container {
+  padding-left: 75px;
+  padding-right: 75px;
+  transition: $transition;
+}
+
+.p-left {
+  padding-left: 350px;
+  transition: $transition;
+}
+
+.p-right {
+  padding-right: 350px;
+  transition: $transition;
+}
+
+.no-opacity {
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.default-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: $color-blue;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: max-content;
+
+  p {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-blue-darken;
+    transition: background-color 0.3s;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.labelled-form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .form-label {
+    margin-bottom: 5px;
+  }
+
+  .form-input, .textarea-input {
+    width: 100%;
+    border-radius: 3px;
+    border: solid 1px $color-grey-darken;
+    padding: 5px;
+
+    &:focus {
+      border: solid 2px $color-grey-darken;
+    }
+  }
+
+  .form-input {
+    height: 30px;
+  }
+
+  .textarea-input {
+    height: 100px;
+    resize: none;
+  }
+
+  .radio-inputs-group {
+    display: flex;
+
+    .radio-group {
+      display: flex;
+      font-size: 0.8em;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+
+      .form-check-input {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.base-font {
+  font-family: Raleway, serif;
+}

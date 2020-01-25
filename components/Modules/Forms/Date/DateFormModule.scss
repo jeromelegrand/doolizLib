@@ -1,0 +1,31 @@
+@import '../../../../../../css/colors';
+
+.DayPicker-Caption {
+  color: $color-blue;
+  text-transform: capitalize;
+}
+
+.DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+  background-color: lighten($color-blue-lighten-25, 5);
+}
+
+.DayPicker-NavButton {
+  top: 15px;
+  right: 15px;
+
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+}
+
+.DayPicker-NavButton:hover {
+  opacity: 1;
+}
+
+.DayPicker-NavButton--prev {
+  background-image: url('../../../../../../../assets/images/chevron-left.svg');
+}
+
+.DayPicker-NavButton--next {
+  background-image: url('../../../../../../../assets/images/chevron-right.svg');
+}

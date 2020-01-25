@@ -1,0 +1,29 @@
+@import '../../../../../../../../../css/colors';
+
+.doc-params-section-content-column {
+  flex-direction: column;
+
+  .padding-x, .padding-y {
+    display: flex;
+    justify-content: space-between;
+
+    .padding-input {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 80px;
+
+        &[type=number]::-webkit-inner-spin-button,
+        &[type=number]::-webkit-outer-spin-button {
+          opacity: 1;
+        }
+      }
+
+      p {
+        margin-left: 10px;
+        font-size: 0.8em;
+      }
+    }
+  }
+}

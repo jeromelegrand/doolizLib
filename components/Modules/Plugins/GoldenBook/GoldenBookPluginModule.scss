@@ -1,0 +1,52 @@
+@import '../../../../../../css/colors';
+
+
+.golden-book-container {
+  display: flex;
+  align-items: flex-start;
+  overflow: scroll;
+  height: 440px;
+  width: 100%;
+
+  .golden-book-form {
+    width: calc(40% - 40px);
+    margin-right: 10px;
+
+    form {
+      width: auto;
+    }
+  }
+
+  .golden-book-items {
+    height: 100%;
+    width: calc(60% - 40px);
+    margin-left: 30px;
+
+    .note {
+      padding: 10px;
+      border-bottom: solid 1px $color-grey;
+
+      svg {
+        min-width: 36px;
+        margin-right: 10px;
+      }
+
+      .text {
+        display: flex;
+        word-break: break-word;
+        white-space: pre-wrap;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+
+      .signature {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        font-size: .8em;
+      }
+    }
+  }
+}
